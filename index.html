@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Web Application</title>
+	<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+	<div class="app-container">
+	  <header>
+		<h1>Upload Center</h1>
+	  </header>
+
+	  <section class="upload-section">
+		<h2>Upload Files</h2>
+		<form id="uploadForm">
+		  <input type="file" id="fileInput" class="upload-btn" accept="*/*" />
+		  <input type="file" id="videoInput" class="upload-btn" accept="video/*" />
+		  <input type="file" id="imgInput" class="upload-btn" accept="image/*" />
+		  <button type="button" id="uploadButton">Upload</button>
+		</form>
+	  </section>
+
+	  <section class="recent-uploads">
+		<h2>Recently Uploaded</h2>
+		<ul id="recentUploadsList">
+		  <!-- Uploaded items will appear here -->
+		</ul>
+	  </section>
+	</div>
+
+	<script src="js/script.js"></script>
+  </body>
+</html>
